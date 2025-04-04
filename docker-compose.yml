@@ -1,0 +1,10 @@
+services:
+  postgres:
+    container_name: 'shortyurl-postgres'
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=shortyurldb'
+      - 'POSTGRES_USER=myuser'
+      - 'POSTGRES_PASSWORD=secret'
+    ports:
+      - '5432:5432'
